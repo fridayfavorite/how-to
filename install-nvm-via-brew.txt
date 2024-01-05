@@ -1,0 +1,19 @@
+      Install NVM via Homebrew (MacOS)
+
+1. make sure we already have homebrew installed
+2. first uninstall existing node.js
+3. before install nvm, its good idea to update the homebrew, by running this command "brew update"
+4. then install nvm by running "brew install nvm"
+5. next, create .nvm directory on home folder
+6. home folder located at (open finder then click Go and click home)
+7. by default when we open terminal, its open on home
+8. edit directory ".bash_profile" on home (in my case it is ".zprofile")
+9. open ".zprofile" on vim editor by running "vim ~/.zprofile"
+10. add this below into ".zprofile" file
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && \. "/usr/local/opt/nvm/etc/bash_completion"
+
+11. the sintact above usually show after we install nvm via homebrew, we can just copied and paste into ".zprofile"
+12. in my case i use the sintact who showed after install nvm
